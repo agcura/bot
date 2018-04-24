@@ -19,15 +19,15 @@ if ($event instanceof LocationMessage)
 	
 if($inputtext == "สวัสดี") {
 	$arrPostData['messages'][0]['type'] = 'text';
-	$arrPostData['messages'][0]['text'] = "มีอะไรให้รับใช้ครับท่าน";
+	$arrPostData['messages'][0]['text'] = "มีอะไรให้รับใช้ครับ";
   
 } else if ($inputtext == "ชื่ออะไร") {
 	$arrPostData['messages'][0]['type'] = 'text';
-	$arrPostData['messages'][0]['text'] = "ชื่อเจวิส ครับท่าน";
+	$arrPostData['messages'][0]['text'] = "ชื่อแอคคูราครับ";
   
 } else if ($inputtext == "ทำอะไรได้บ้าง") {
 	$arrPostData['messages'][0]['type'] = 'text';
-	$arrPostData['messages'][0]['text'] = "เปิด ปิด ไฟ แอร์ เช็คอุณหภูมิ ครับท่าน";
+	$arrPostData['messages'][0]['text'] = "ทำได้หลายอย่างครับ";
   
 } else if ($inputtext == "เปิดไฟ") {
   	//$mode = curl_init("http://128.199.137.43:3000/smtbot2017/mode/5/o");
@@ -71,14 +71,14 @@ if($inputtext == "สวัสดี") {
 
 } else if ($inputtext == "แผนที่") {
 	$arrPostData['messages'][0]['type'] = "location";
-	$arrPostData['messages'][0]['title'] = "ศูนย์ศึกษาวิภาวดี มหาวิทยาลัยรังสิต";
-	$arrPostData['messages'][0]['address'] = "อาคาร TST Tower ชั้น 21-22 เลขที่ 21 ถ.วิภาวดีรังสิต ซ.9 จอมพล จตุจักร กรุงเทพ";
-	$arrPostData['messages'][0]['latitude'] = "13.808112";
-	$arrPostData['messages'][0]['longitude'] = "100.559255";
+	$arrPostData['messages'][0]['title'] = "บริษัท บางซื่ออุตสาหกรรม จำกัด";
+	$arrPostData['messages'][0]['address'] = "บางซื่อ กรุงเทพ";
+	$arrPostData['messages'][0]['latitude'] = "13.802059";
+	$arrPostData['messages'][0]['longitude'] = "100.537275";
  
 } else if ($inputtext == "รายงาน") {
 	$arrPostData['messages'][0]['type'] = 'text';
-	$arrPostData['messages'][0]['text'] = "หลอดไฟ: นอน1-ปิด, นอน2-เปิด*, นอน3-ปิด | แอร์: นอน1-เปิด*, นอน2-เปิด*, นอน3-ปิด";
+	$arrPostData['messages'][0]['text'] = "กำลังเตรียมอยู่ครับ";
 
 } else if ($inputtext == "เยี่ยม") {
 	$arrPostData['messages'][0]['type'] = "sticker";
@@ -102,7 +102,7 @@ if($inputtext == "สวัสดี") {
 
 } else if ($inputtext == "เรียนที่ไหน") {
 	$arrPostData['messages'][0]['type'] = 'text';
-	$arrPostData['messages'][0]['text'] = "https://www.facebook.com/RSU.IT.SMT";
+	$arrPostData['messages'][0]['text'] = "...";
 	
 }else{
  	$arrPostData['messages'][0]['type'] = 'text';
